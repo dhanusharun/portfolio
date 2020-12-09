@@ -95,6 +95,13 @@ hr.separator {
   padding-bottom: 22px;
   font-size: 26px;
 }
+#img{
+  visibility: hidden;
+  z-index: -1;
+}
+#text{
+  z-index: 1;
+}
 
 /*** Light Body ***/
 
@@ -221,6 +228,9 @@ body.light hr.separator {
 }
 
 @media (min-width: 992px) {
+  #img{
+    visibility: hidden;
+  }
   body.light .header ul.icon-menu li.icon-box {
     background-color: #eee;
   }
@@ -238,6 +248,13 @@ body.light hr.separator {
 }
 
 @media (max-width: 991px) {
+  #img{
+    visibility: hidden;
+  }
+  #text{
+    position: relative;
+    top: -270px;
+  }
 
   body.light .main-img-mobile {
     border: 4px solid #eee;
@@ -300,6 +317,20 @@ body.light hr.separator {
 }
 
 @media (max-width: 576px) {
+  #img{
+    visibility: visible;
+    z-index: -1;
+    position: relative;
+    top: 0px;
+    height: 300px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 30%;
+  }
+  #text{
+    position: relative;
+    top: -80px;
+  }
   body.light .title-section {
     background: #eee;
     border-bottom: 1px solid #ddd;
