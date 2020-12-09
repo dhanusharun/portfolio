@@ -316,7 +316,7 @@ body.light hr.separator {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   #img{
     visibility: visible;
     z-index: -1;
