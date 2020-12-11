@@ -47,7 +47,17 @@ html {
   overflow-x: hidden;
   height: 100%;
 }
-
+#banner{
+  position: fixed;
+  top: 30px;
+  bottom: 30px;
+  right: 876.672px;
+  left: 30px;
+  width: auto;
+  height: 597px;
+  border-radius:40px;
+  box-shadow: rgba(30, 37, 48, 0.07);
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -101,6 +111,9 @@ hr.separator {
 }
 #text{
   z-index: 1;
+  position: fixed;
+  top: 200px;
+  width: 550px;
 }
 
 /*** Light Body ***/
@@ -321,15 +334,20 @@ body.light hr.separator {
     visibility: visible;
     z-index: -1;
     position: relative;
-    top: 0px;
-    height: 300px;
+    top: -70px;
+    height: 500px;
     width: auto;
+    left: -20px;
     filter: grayscale(100%);
     opacity: 0.3;
   }
   #text{
-    position: relative;
-    top: -80px;
+    position: fixed;
+    width: 300px;
+    left: 20px;
+    top: 260px;
+    text-align: justify;
+
   }
   body.light .title-section {
     background: #eee;
