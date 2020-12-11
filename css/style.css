@@ -349,6 +349,9 @@ body.light hr.separator {
     text-align: justify;
 
   }
+  body{
+    background-color: black;
+  }
   body.light .title-section {
     background: #eee;
     border-bottom: 1px solid #ddd;
