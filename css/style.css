@@ -47,17 +47,7 @@ html {
   overflow-x: hidden;
   height: 100%;
 }
-#banner{
-  position: fixed;
-  top: 30px;
-  bottom: 30px;
-  right: 876.672px;
-  left: 30px;
-  width: auto;
-  height: 597px;
-  border-radius:40px;
-  box-shadow: rgba(30, 37, 48, 0.07);
-}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -104,16 +94,6 @@ hr.separator {
 .custom-title {
   padding-bottom: 22px;
   font-size: 26px;
-}
-#img{
-  visibility: hidden;
-  z-index: -1;
-}
-#text{
-  z-index: 1;
-  position: fixed;
-  top: 200px;
-  width: 550px;
 }
 
 /*** Light Body ***/
@@ -241,9 +221,6 @@ body.light hr.separator {
 }
 
 @media (min-width: 992px) {
-  #img{
-    visibility: hidden;
-  }
   body.light .header ul.icon-menu li.icon-box {
     background-color: #eee;
   }
@@ -261,9 +238,7 @@ body.light hr.separator {
 }
 
 @media (max-width: 991px) {
-  #img{
-    visibility: hidden;
-  }
+
   body.light .main-img-mobile {
     border: 4px solid #eee;
   }
@@ -324,21 +299,7 @@ body.light hr.separator {
   }
 }
 
-@media (max-width: 600px) {
-  #img{
-    visibility: visible;
-    z-index: -1;
-    position: relative;
-    top: -60px;
-    height: 500px;
-    width: auto;
-    left: 0px;
-    filter: grayscale(100%);
-    opacity: 0.5;
-  }
-  body{
-    background-color: black;
-  }
+@media (max-width: 576px) {
   body.light .title-section {
     background: #eee;
     border-bottom: 1px solid #ddd;
@@ -1611,6 +1572,9 @@ body.light hr.separator {
 }
 
 @media (max-width: 576px) {
+  body{
+    background-image: url("../img/Banner-3.jpg");
+  }
   .btn {
     font-size: 14px;
   }
@@ -1667,15 +1631,17 @@ body.light hr.separator {
     width: 230px;
     height: 230px;
   }
-
+  
   .home .home-details h1 {
     font-size: 29px;
     line-height: 29px;
-    margin: 18px 0 13px;
+    margin: 220px 0 13px;
   }
 
   .home .home-details h6 {
+    position: relative;
     font-size: 19px;
+    top: 200px;
   }
 
   .title-section {
