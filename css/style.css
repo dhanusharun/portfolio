@@ -333,24 +333,25 @@ body.light hr.separator {
   #img{
     visibility: visible;
     z-index: -1;
-    position: relative;
-    top: -70px;
+    position: fixed;
+    top: 0px;
     height: 500px;
     width: auto;
-    left: -20px;
+    left: 0px;
     filter: grayscale(100%);
-    opacity: 0.3;
+    opacity: 0.5;
   }
   #text{
     position: fixed;
     width: 300px;
     left: 20px;
-    top: 260px;
+    top: 220px;
     text-align: justify;
 
   }
   body{
     background-color: black;
+    overflow: hidden;
   }
   body.light .title-section {
     background: #eee;
