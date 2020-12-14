@@ -99,6 +99,7 @@
 #switcher .content-switcher {
 	padding: 16px;
 	overflow: hidden;
+	visibility: hidden;
 }
 
 #switcher a.color {
